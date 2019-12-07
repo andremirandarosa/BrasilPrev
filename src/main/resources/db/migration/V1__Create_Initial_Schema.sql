@@ -1,0 +1,1 @@
+create schema SCHEMA_BRASILPREV;

@@ -1,0 +1,932 @@
+{
+	"info": {
+		"_postman_id": "7f651590-e8d5-4043-87b4-72ed0726f803",
+		"name": "BrasilPrev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "Categoria - Cria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categoria/cria?categoria=Teste de Categoria3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categoria",
+								"cria"
+							],
+							"query": [
+								{
+									"key": "categoria",
+									"value": "Teste de Categoria3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria - Altera",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categoria/altera?idCategoria=1&categoria=Teste de Categoria Alterado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categoria",
+								"altera"
+							],
+							"query": [
+								{
+									"key": "idCategoria",
+									"value": "1"
+								},
+								{
+									"key": "categoria",
+									"value": "Teste de Categoria Alterado"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria - Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categoria/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categoria",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria - Busca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categoria/busca?idCategoria=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categoria",
+								"busca"
+							],
+							"query": [
+								{
+									"key": "idCategoria",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria - Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categoria/remove?idCategoria=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categoria",
+								"remove"
+							],
+							"query": [
+								{
+									"key": "idCategoria",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Produto",
+			"item": [
+				{
+					"name": "Produto - Cria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/produto/cria?idCategoria=5&produto=Teste de Produto Criado pela API&preco=2.43&quantidade=7&descricao=Teste de Descricao&foto=Teste de Foto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produto",
+								"cria"
+							],
+							"query": [
+								{
+									"key": "idCategoria",
+									"value": "5"
+								},
+								{
+									"key": "produto",
+									"value": "Teste de Produto Criado pela API"
+								},
+								{
+									"key": "preco",
+									"value": "2.43"
+								},
+								{
+									"key": "quantidade",
+									"value": "7"
+								},
+								{
+									"key": "descricao",
+									"value": "Teste de Descricao"
+								},
+								{
+									"key": "foto",
+									"value": "Teste de Foto"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Produto - Altera",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/produto/altera?idProduto=4&idCategoria=5&produto=Teste de Produto pela API Alterado&preco=3.33&quantidade=3&descricao=Teste de Descricao 2&foto=Teste de Foto 2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produto",
+								"altera"
+							],
+							"query": [
+								{
+									"key": "idProduto",
+									"value": "4"
+								},
+								{
+									"key": "idCategoria",
+									"value": "5"
+								},
+								{
+									"key": "produto",
+									"value": "Teste de Produto pela API Alterado"
+								},
+								{
+									"key": "preco",
+									"value": "3.33"
+								},
+								{
+									"key": "quantidade",
+									"value": "3"
+								},
+								{
+									"key": "descricao",
+									"value": "Teste de Descricao 2"
+								},
+								{
+									"key": "foto",
+									"value": "Teste de Foto 2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Produto - Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/produto/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produto",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Produto - Busca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/produto/busca?idProduto=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produto",
+								"busca"
+							],
+							"query": [
+								{
+									"key": "idProduto",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Produto - Remove",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/produto/remove?idProduto=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produto",
+								"remove"
+							],
+							"query": [
+								{
+									"key": "idProduto",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Cliente - Cria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cliente/cria?nome=André Luiz&senha=123456&email=cliente@teste.com&rua=Rua de teste&bairro=Bairro de teste&cidade=Campo Grande&estado=MS&cep=79100400",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente",
+								"cria"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "André Luiz"
+								},
+								{
+									"key": "senha",
+									"value": "123456"
+								},
+								{
+									"key": "email",
+									"value": "cliente@teste.com"
+								},
+								{
+									"key": "rua",
+									"value": "Rua de teste"
+								},
+								{
+									"key": "bairro",
+									"value": "Bairro de teste"
+								},
+								{
+									"key": "cidade",
+									"value": "Campo Grande"
+								},
+								{
+									"key": "estado",
+									"value": "MS"
+								},
+								{
+									"key": "cep",
+									"value": "79100400"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente - Altera",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cliente/altera?idCliente=2&nome=André Luiz Alterado&senha=123456 2222&email=cliente@teste.com 22222&rua=Rua de teste 222&bairro=Bairro de teste 222&cidade=Campo Grande 2222&estado=MS 222&cep=79100400 22222",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente",
+								"altera"
+							],
+							"query": [
+								{
+									"key": "idCliente",
+									"value": "2"
+								},
+								{
+									"key": "nome",
+									"value": "André Luiz Alterado"
+								},
+								{
+									"key": "senha",
+									"value": "123456 2222"
+								},
+								{
+									"key": "email",
+									"value": "cliente@teste.com 22222"
+								},
+								{
+									"key": "rua",
+									"value": "Rua de teste 222"
+								},
+								{
+									"key": "bairro",
+									"value": "Bairro de teste 222"
+								},
+								{
+									"key": "cidade",
+									"value": "Campo Grande 2222"
+								},
+								{
+									"key": "estado",
+									"value": "MS 222"
+								},
+								{
+									"key": "cep",
+									"value": "79100400 22222"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente - Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cliente/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente - Busca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cliente/busca?idCliente=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente",
+								"busca"
+							],
+							"query": [
+								{
+									"key": "idCliente",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente - Remove",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cliente/remove?idCliente=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente",
+								"remove"
+							],
+							"query": [
+								{
+									"key": "idCliente",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pedido",
+			"item": [
+				{
+					"name": "Pedido - Cria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pedido/cria?idCliente=3&data=03/12/2019&status=Teste de Status&sessao=Sessao de Teste",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pedido",
+								"cria"
+							],
+							"query": [
+								{
+									"key": "idCliente",
+									"value": "3"
+								},
+								{
+									"key": "data",
+									"value": "03/12/2019"
+								},
+								{
+									"key": "status",
+									"value": "Teste de Status"
+								},
+								{
+									"key": "sessao",
+									"value": "Sessao de Teste"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido - Altera",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pedido/altera?idPedido=2&idCliente=3&data=03/12/1980&status=Teste de Status Alterado&sessao=Sessao de Teste Alterado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pedido",
+								"altera"
+							],
+							"query": [
+								{
+									"key": "idPedido",
+									"value": "2"
+								},
+								{
+									"key": "idCliente",
+									"value": "3"
+								},
+								{
+									"key": "data",
+									"value": "03/12/1980"
+								},
+								{
+									"key": "status",
+									"value": "Teste de Status Alterado"
+								},
+								{
+									"key": "sessao",
+									"value": "Sessao de Teste Alterado"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido - Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pedido/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pedido",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido - Busca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pedido/busca?idPedido=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pedido",
+								"busca"
+							],
+							"query": [
+								{
+									"key": "idPedido",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido - Remove",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pedido/remove?idPedido=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pedido",
+								"remove"
+							],
+							"query": [
+								{
+									"key": "idPedido",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pedido Item",
+			"item": [
+				{
+					"name": "Pedido Item - Cria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pedido_item/cria?idProduto=1&idPedido=3&produto=Teste de Nome do Produto&quantidade=5&valor=3.99&subtotal=44.7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pedido_item",
+								"cria"
+							],
+							"query": [
+								{
+									"key": "idProduto",
+									"value": "1"
+								},
+								{
+									"key": "idPedido",
+									"value": "3"
+								},
+								{
+									"key": "produto",
+									"value": "Teste de Nome do Produto"
+								},
+								{
+									"key": "quantidade",
+									"value": "5"
+								},
+								{
+									"key": "valor",
+									"value": "3.99"
+								},
+								{
+									"key": "subtotal",
+									"value": "44.7"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido Item - Altera",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pedido_item/altera?idPedidoItem=4&idProduto=4&idPedido=2&produto=Teste de Nome do Produto Alterado&quantidade=6&valor=2.54&subtotal=522.36",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pedido_item",
+								"altera"
+							],
+							"query": [
+								{
+									"key": "idPedidoItem",
+									"value": "4"
+								},
+								{
+									"key": "idProduto",
+									"value": "4"
+								},
+								{
+									"key": "idPedido",
+									"value": "2"
+								},
+								{
+									"key": "produto",
+									"value": "Teste de Nome do Produto Alterado"
+								},
+								{
+									"key": "quantidade",
+									"value": "6"
+								},
+								{
+									"key": "valor",
+									"value": "2.54"
+								},
+								{
+									"key": "subtotal",
+									"value": "522.36"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido Item - Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pedido_item/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pedido_item",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido Item - Busca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pedido_item/busca?idPedidoItem=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pedido_item",
+								"busca"
+							],
+							"query": [
+								{
+									"key": "idPedidoItem",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido Item - Remove",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pedido_item/remove?idPedidoItem=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pedido_item",
+								"remove"
+							],
+							"query": [
+								{
+									"key": "idPedidoItem",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
