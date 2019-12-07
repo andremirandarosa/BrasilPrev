@@ -120,7 +120,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/categoria/remove?idCategoria=2",
+							"raw": "http://localhost:8080/api/categoria/remove?idCategoria=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -134,7 +134,7 @@
 							"query": [
 								{
 									"key": "idCategoria",
-									"value": "2"
+									"value": "1"
 								}
 							]
 						}
@@ -153,7 +153,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/produto/cria?idCategoria=5&produto=Teste de Produto Criado pela API&preco=2.43&quantidade=7&descricao=Teste de Descricao&foto=Teste de Foto",
+							"raw": "http://localhost:8080/api/produto/cria?idCategoria=1&produto=Teste de Produto Criado pela API&preco=2.43&quantidade=7&descricao=Teste de Descricao&foto=Teste de Foto",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -167,7 +167,7 @@
 							"query": [
 								{
 									"key": "idCategoria",
-									"value": "5"
+									"value": "1"
 								},
 								{
 									"key": "produto",
@@ -736,10 +736,25 @@
 				{
 					"name": "Pedido Item - Cria",
 					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "user",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/pedido_item/cria?idProduto=1&idPedido=3&produto=Teste de Nome do Produto&quantidade=5&valor=3.99&subtotal=44.7",
+							"raw": "http://localhost:8080/api/pedido_item/cria?idProduto=2&idPedido=4&produto=Teste de Nome do Produto&quantidade=5&valor=3.99",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -753,11 +768,11 @@
 							"query": [
 								{
 									"key": "idProduto",
-									"value": "1"
+									"value": "2"
 								},
 								{
 									"key": "idPedido",
-									"value": "3"
+									"value": "4"
 								},
 								{
 									"key": "produto",
@@ -772,8 +787,9 @@
 									"value": "3.99"
 								},
 								{
-									"key": "subtotal",
-									"value": "44.7"
+									"key": "",
+									"value": "",
+									"disabled": true
 								},
 								{
 									"key": "",
@@ -796,7 +812,7 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/pedido_item/altera?idPedidoItem=4&idProduto=4&idPedido=2&produto=Teste de Nome do Produto Alterado&quantidade=6&valor=2.54&subtotal=522.36",
+							"raw": "http://localhost:8080/api/pedido_item/altera?idPedidoItem=5&idProduto=2&idPedido=4&produto=Teste de Nome do Produto Alterado&quantidade=6&valor=2.54",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -810,15 +826,15 @@
 							"query": [
 								{
 									"key": "idPedidoItem",
-									"value": "4"
+									"value": "5"
 								},
 								{
 									"key": "idProduto",
-									"value": "4"
+									"value": "2"
 								},
 								{
 									"key": "idPedido",
-									"value": "2"
+									"value": "4"
 								},
 								{
 									"key": "produto",
@@ -833,8 +849,9 @@
 									"value": "2.54"
 								},
 								{
-									"key": "subtotal",
-									"value": "522.36"
+									"key": "",
+									"value": "",
+									"disabled": true
 								},
 								{
 									"key": "",
