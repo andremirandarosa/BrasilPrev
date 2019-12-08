@@ -1,6 +1,7 @@
 package br.com.brasilprev.desafio.model.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -36,6 +37,7 @@ public class Clientes implements Serializable {
     @Column(name = "email")
     private String email;
         
+    @JsonIgnore
     @Column(name = "senha")
     private String senha;
     
